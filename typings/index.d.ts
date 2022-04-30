@@ -3761,6 +3761,8 @@ export interface BaseApplicationCommandData {
   name: string;
   nameLocalizations?: LocalizationMap;
   defaultPermission?: boolean;
+  defaultMemberPermissions?: BigInt;
+  dmPermission?: boolean;
 }
 
 export type CommandOptionDataTypeResolvable = ApplicationCommandOptionType | ApplicationCommandOptionTypes;
