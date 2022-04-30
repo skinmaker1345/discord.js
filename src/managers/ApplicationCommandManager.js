@@ -222,6 +222,8 @@ class ApplicationCommandManager extends CachedManager {
       type: typeof command.type === 'number' ? command.type : ApplicationCommandTypes[command.type],
       options: command.options?.map(o => ApplicationCommand.transformOption(o)),
       default_permission: command.defaultPermission ?? command.default_permission,
+      dm_permission: command.DMPermission ?? command.dm_permission,
+      default_member_permissions: command.defaultMemberPermissions ?? command.default_member_permissions
     };
   }
 }
